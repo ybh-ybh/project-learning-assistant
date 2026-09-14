@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Learning Assistant · 中文 Banner</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="banner.css">
+</head>
+<body>
+  <main class="banner">
+    <!-- 左侧品牌与价值主张 -->
+    <section class="left">
+      <div>
+        <div class="eyebrow">AGENT SKILL · 本地源码 · 可核验课程</div>
+        <div class="title-block">
+          <div class="title-primary zh">源码研习</div>
+          <div class="title-secondary zh">Project Learning Assistant</div>
+        </div>
+        <p class="tagline">
+          把本地开源项目，转化为循序渐进、可核验的 Markdown 课程；<br>
+          从架构总览，一路读到核心机制与关键调用链。
+        </p>
+      </div>
+      <div class="footer">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 5.5C7.2 4.2 9.7 4.5 12 6.4V19C9.6 17.2 7.1 17 4 18.2V5.5Z" stroke="#F3F1EC" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M20 5.5C16.8 4.2 14.3 4.5 12 6.4V19C14.4 17.2 16.9 17 20 18.2V5.5Z" stroke="#F3F1EC" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span>MIT License · Agent Skill</span>
+      </div>
+    </section>
+
+    <!-- 右侧课程生成流程 -->
+    <section class="right">
+      <div class="chart-head">
+        <h3>先定学习路径，再真正读懂源码。</h3>
+        <p>项目输入 · 源码分析 · 大纲确认 · 课程核验</p>
+      </div>
+      <div class="chart-wrap">
+        <svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project Learning Assistant 课程生成流程">
+          <defs>
+            <pattern id="grid-zh" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M40 0H0V40" fill="none" stroke="#E0DDD6" stroke-width="1"/>
+            </pattern>
+            <marker id="arrow-zh" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0 0V6L9 3Z" fill="#111111"/>
+            </marker>
+          </defs>
+          <rect width="760" height="460" fill="url(#grid-zh)" opacity="0.6"/>
+
+          <!-- 汇聚、生成与核验流程 -->
+          <g fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-zh)">
+            <path d="M135 106V125H210V143"/>
+            <path d="M385 106V125H300V143"/>
+            <path d="M390 183H498"/>
+            <path d="M610 221V248"/>
+            <path d="M610 298V323"/>
+            <path d="M575 393V408"/>
+            <path d="M685 274H738V183H722"/>
+          </g>
+
+          <!-- 项目与学习需求输入 -->
+          <g font-family="Inter, PingFang SC, Microsoft YaHei, system-ui, sans-serif">
+            <rect x="30" y="34" width="210" height="72" rx="12" fill="#F3F1EC" stroke="#111111" stroke-width="1.5"/>
+            <text x="48" y="56" fill="#8A8680" font-size="9.5" font-weight="600" letter-spacing="1.2">01 · PROJECT</text>
+            <text x="48" y="80" fill="#111111" font-size="15" font-weight="700">本地开源项目</text>
+            <text x="48" y="98" fill="#6B6862" font-size="11">文档 · 目录结构 · 真实源码</text>
+
+            <rect x="280" y="34" width="210" height="72" rx="12" fill="#F3F1EC" stroke="#111111" stroke-width="1.5"/>
+            <text x="298" y="56" fill="#8A8680" font-size="9.5" font-weight="600" letter-spacing="1.2">01 · BRIEF</text>
+            <text x="298" y="80" fill="#111111" font-size="15" font-weight="700">学习设置</text>
+            <text x="298" y="98" fill="#6B6862" font-size="11">语言 · 节数 · 目标 · 输出目录</text>
+          </g>
+
+          <!-- 源码分析与大纲阶段 -->
+          <g font-family="Inter, PingFang SC, Microsoft YaHei, system-ui, sans-serif">
+            <rect x="120" y="145" width="270" height="76" rx="12" fill="#F3F1EC" stroke="#111111" stroke-width="1.5"/>
+            <text x="140" y="168" fill="#8A8680" font-size="9.5" font-weight="600" letter-spacing="1.2">02 · ANALYZE</text>
+            <text x="140" y="192" fill="#111111" font-size="15" font-weight="700">架构与核心源码分析</text>
+            <text x="140" y="212" fill="#6B6862" font-size="11">模块边界 · 核心机制 · 代表性调用链</text>
+
+            <rect x="500" y="145" width="220" height="76" rx="12" fill="#D94F3C" stroke="#D94F3C" stroke-width="1.5"/>
+            <text x="520" y="168" fill="#FFFFFF" opacity="0.72" font-size="9.5" font-weight="600" letter-spacing="1.2">03 · OUTLINE</text>
+            <text x="520" y="192" fill="#FFFFFF" font-size="15" font-weight="700">生成课程大纲</text>
+            <text x="520" y="212" fill="#FFFFFF" opacity="0.9" font-size="11">学习路径 · Mermaid 架构图</text>
+          </g>
+
+          <!-- 用户确认门与修订回路 -->
+          <g font-family="Inter, PingFang SC, Microsoft YaHei, system-ui, sans-serif">
+            <rect x="535" y="250" width="150" height="48" rx="24" fill="#F3F1EC" stroke="#111111" stroke-width="1.5"/>
+            <circle cx="557" cy="274" r="5" fill="#D94F3C"/>
+            <text x="575" y="279" fill="#111111" font-size="14" font-weight="700">用户确认大纲</text>
+            <text x="625" y="317" fill="#6B6862" font-size="10.5">通过</text>
+            <text x="731" y="243" text-anchor="end" fill="#6B6862" font-size="10.5">修改后再确认</text>
+          </g>
+
+          <!-- 课程生成与交付核验 -->
+          <g font-family="Inter, PingFang SC, Microsoft YaHei, system-ui, sans-serif">
+            <rect x="430" y="325" width="290" height="68" rx="12" fill="#F3F1EC" stroke="#111111" stroke-width="1.5"/>
+            <text x="450" y="347" fill="#8A8680" font-size="9.5" font-weight="600" letter-spacing="1.2">04 · GENERATE</text>
+            <text x="450" y="370" fill="#111111" font-size="15" font-weight="700">生成 Markdown 课程</text>
+            <text x="450" y="387" fill="#6B6862" font-size="11">全部课程 · 指定课程 · 单课更新</text>
+
+            <rect x="120" y="410" width="600" height="44" rx="10" fill="#111111"/>
+            <text x="140" y="437" fill="#F3F1EC" font-size="13" font-weight="700">05 · 交付核验</text>
+            <text x="700" y="437" text-anchor="end" fill="#C9C5BD" font-size="11">文件数量 · 路径 · 符号 · Mermaid 调用链</text>
+          </g>
+        </svg>
+      </div>
+      <div class="bottom-right">
+        PROJECT LEARNING ASSISTANT · SOURCE-GROUNDED COURSE<br>
+        把复杂代码库，变成一条清晰可走的学习路径
+      </div>
+    </section>
+  </main>
+</body>
+</html>

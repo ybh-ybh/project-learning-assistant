@@ -2,7 +2,9 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-Project Learning Assistant is a Codex skill that turns a local open-source codebase into a progressive Markdown course focused on architecture, core mechanisms, and source-code reading paths.
+![Project Learning Assistant banner](docs/assets/banner-en.png)
+
+Project Learning Assistant is a Agent skill that turns a local open-source codebase into a progressive Markdown course focused on architecture, core mechanisms, and source-code reading paths.
 
 > [!CAUTION]
 > **This skill can consume a very large number of tokens.**

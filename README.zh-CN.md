@@ -2,7 +2,9 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-Project Learning Assistant 是一个 Codex Skill，用于将本地开源项目转换为循序渐进的 Markdown 课程，重点讲解项目架构、核心机制和源码阅读路径。
+![Project Learning Assistant 中文横幅](docs/assets/banner-zh-CN.png)
+
+Project Learning Assistant 是一个 Agent Skill，用于将本地开源项目转换为循序渐进的 Markdown 课程，重点讲解项目架构、核心机制和源码阅读路径。
 
 > [!CAUTION]
 > **这个 Skill 会消耗非常多的 Token。**
