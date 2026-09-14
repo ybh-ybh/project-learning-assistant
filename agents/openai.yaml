@@ -1,4 +1,6 @@
 interface:
   display_name: "Project Learning Assistant"
-  short_description: "Build source-grounded courses from local projects"
-  default_prompt: "Use $project-learning-assistant to turn a local open-source project into a progressive architecture and core-source course."
+  short_description: "Build local-source courses with verified Mermaid diagrams"
+  default_prompt: "Use $project-learning-assistant to turn a local open-source project into a progressive course with verified architecture and call-flow diagrams."
+policy:
+  allow_implicit_invocation: true

@@ -2,6 +2,8 @@
 
 Use this procedure for a new course request. The purpose is to collect only the decisions that materially affect the course and to obtain enough local evidence to recommend a lesson count.
 
+For selected lessons or an explicit update to an existing lesson, reuse the existing outline and course metadata. Do not repeat the full intake or project-wide analysis unless the requested target cannot be resolved from the existing course.
+
 ## 1. Resolve the local project
 
 Prefer an explicit absolute path from the user. If none is provided and the current working directory is recognizably a project, propose that directory and ask the user to confirm it. A recognizable project normally contains source directories, project documentation, build manifests, package manifests, or version-control metadata.
@@ -36,7 +38,7 @@ Use these ranges as guidance, not a rigid formula:
 - **6–8 lessons:** a medium project with multiple meaningful modules, abstractions, or runtime flows;
 - **9–10 lessons:** a large or conceptually dense project with several subsystems and important cross-module behavior.
 
-Honor a user-specified lesson count. If the requested count cannot reasonably support the confirmed learning goal, explain the tradeoff before proceeding rather than silently changing it.
+Honor any user-specified lesson count, including a value outside 3–10. The 3–10 range applies only to recommendations. If the requested count cannot reasonably support the confirmed learning goal, explain the tradeoff before proceeding rather than capping or silently changing it.
 
 ## 4. Confirm the five inputs
 
@@ -56,13 +58,14 @@ If all values are explicit and consistent, do not ask redundant questions.
 
 Inspect the exact output path before any write.
 
-- If it does not exist, it may be created after the inputs are confirmed.
+- If it does not exist, create it directly after the inputs are confirmed.
 - If it exists and is empty, it may be used.
-- If it exists and is non-empty, report that fact and ask the user to choose a different directory or explicitly choose how new files should be added.
+- For a new outline or full course, if it exists and is non-empty, report that fact and ask the user to choose a different directory or explicitly choose how new files should be added.
+- For selected lessons or an explicit lesson update, treat existing course files as expected. Ask only if the target is ambiguous or the requested write would affect a file the user did not authorize.
 - Never overwrite an existing same-name file without a separate explicit decision.
 - Never delete or clear the directory to make it usable.
 
-On a continuation turn, the outline created by this workflow is expected output, not an unrelated conflict. Still protect any pre-existing lesson or same-name files.
+On a continuation turn, the outline created by this workflow is expected output, not an unrelated conflict. Existing course files are also expected during selected-lesson generation or an explicit lesson update. Still protect unrelated files and require a clear target before modifying an existing lesson.
 
 ## 6. Record the local source baseline
 
@@ -77,7 +80,7 @@ For a Git project, record:
 
 Read the source origin only from local Git configuration or local project documentation. It is optional metadata, not an analysis source.
 
-For a non-Git project, inspect local manifests, version files, or release documentation. If no reliable version exists, record `local snapshot; version unknown` in the course language.
+For a non-Git project, inspect local manifests, version files, or release documentation. If no reliable version exists, record `version unknown` in the course language. Do not generate an additional local snapshot identifier.
 
 When the worktree is dirty, state that the course includes local modifications. Do not claim that dirty content is identical to the recorded commit. This version and worktree inspection happens once while preparing the outline and must not be repeated after the user confirms it.
 
@@ -89,7 +92,7 @@ After the inputs are confirmed, deepen the analysis enough to design the outline
 2. identify architectural layers, major modules, and ownership boundaries;
 3. find core data structures, protocols, state, or lifecycle concepts;
 4. trace representative entry points into the most important mechanisms;
-5. follow at least the cross-module flows necessary for the confirmed learning goal;
+5. identify the component relationships and representative cross-module flows needed for the Mermaid diagrams and confirmed learning goal;
 6. use tests and local documentation to validate intended behavior;
 7. note documentation/source disagreements and unresolved uncertainties.
 
